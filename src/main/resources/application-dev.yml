@@ -1,0 +1,23 @@
+env: 聊天系统
+server:
+  port: 8088
+
+spring:
+  application:
+    name: cahtOS
+
+  # 数据源配置
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/chat?serverTimezone=CTT
+    username: root
+    password: ding521101
+
+logging:
+  level:
+    com.sh.mapper: DEBUG
+  file:
+    name: /logs/logback.log
+
+
+

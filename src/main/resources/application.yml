@@ -1,0 +1,14 @@
+server:
+  tomcat:
+    max-connections: 10000
+spring:
+  profiles:
+    active: dev
+  http:
+    multipart:
+      max-file-size: 100Mb
+      max-request-size: 100Mb
+      enabled: true
+mybatis:
+  mapper-locations: classpath*:mapper/*/*.xml
+
